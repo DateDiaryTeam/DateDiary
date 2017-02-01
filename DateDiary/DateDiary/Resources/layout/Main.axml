@@ -3,11 +3,49 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
-<Button  
-    android:id="@+id/MyButton"
-    android:layout_width="match_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/Hello"
-    />
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@drawable/bg">
+<!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+<!--<RelativeLayout>-->
+    <ImageView
+        android:src="@drawable/title"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<!--</RelativeLayout>-->
+<!--ユーザー名入力テキストボックス-->
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textusername"
+        android:hint="User Name"
+        android:gravity="center" />
+<!--パスワード入力テキストボックス-->
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textpassword"
+        android:gravity="center"
+        android:hint="Password" />
+<!--チェックボックス-->
+    <CheckBox
+        android:text="Remember Me!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox1" />
+<!--ログインボタン-->
+    <Button
+        android:id="@+id/email_sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Sign In"
+        android:textStyle="bold" />
 </LinearLayout>

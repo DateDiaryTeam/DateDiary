@@ -45,7 +45,13 @@ namespace DateDiary
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int bg = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int Icon = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int title = 2130837506;
 			
 			static Drawable()
 			{
@@ -60,8 +66,20 @@ namespace DateDiary
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050003
+			public const int checkBox1 = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int email_sign_in_button = 2131034116;
+			
 			// aapt resource value: 0x7f050000
-			public const int MyButton = 2131034112;
+			public const int login_progress = 2131034112;
+			
+			// aapt resource value: 0x7f050002
+			public const int textpassword = 2131034114;
+			
+			// aapt resource value: 0x7f050001
+			public const int textusername = 2131034113;
 			
 			static Id()
 			{
